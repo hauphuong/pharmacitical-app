@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            List Page
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item text-wrap *ngFor="let item of items" (click)="itemSelected(item)">
+            <h3>{{item}}</h3>
+        </ion-item>
+    </ion-list>
+</ion-content>
